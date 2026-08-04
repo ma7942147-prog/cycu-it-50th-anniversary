@@ -2,8 +2,9 @@ import base64
 import os
 
 def build_alumni_page():
-    img_path = r"C:\Users\ma794\Downloads\20261017_中原大學系學會校友日\校友日邀請卡.jpg"
-    output_html_path = r"C:\Users\ma794\Downloads\20261017_中原大學系學會校友日\index.html"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    img_path = os.path.join(base_dir, "校友日邀請卡.jpg")
+    output_html_path = os.path.join(base_dir, "index.html")
     
     # Encode image to base64
     base64_img = ""
@@ -966,7 +967,7 @@ def build_alumni_page():
     <!-- Video Section -->
     <section id="video" style="padding-top: 1rem; padding-bottom: 3rem;">
         <div class="section-title-wrap">
-            <h2 class="section-title">50周年回憶影音專區</h2>
+            <h2 class="section-title">83年級畢業回憶影音專區</h2>
             <p style="color: var(--text-muted); margin-top: 0.5rem; font-weight: 300;">回首半世紀의璀璨，聽聽歌，看看我們一同寫下的故事</p>
         </div>
         
@@ -979,23 +980,23 @@ def build_alumni_page():
             
             <div class="video-playlist">
                 <div class="playlist-item active" onclick="playVideo('cabBO0QSl_I', this)">
-                    <img src="https://img.youtube.com/vi/cabBO0QSl_I/mqdefault.jpg" alt="50周年歌曲 MV (一)">
+                    <img src="https://img.youtube.com/vi/cabBO0QSl_I/mqdefault.jpg" alt="83年級畢業歌曲 MV (一)">
                     <div class="playlist-info">
-                        <h4>50周年歌曲 MV (一)</h4>
+                        <h4>83年級畢業歌曲 MV (一)</h4>
                         <p>YouTube 歌曲 MV分享</p>
                     </div>
                 </div>
                 <div class="playlist-item" onclick="playVideo('jZIrnvmdjGY', this)">
-                    <img src="https://img.youtube.com/vi/jZIrnvmdjGY/mqdefault.jpg" alt="50周年歌曲 MV (二)">
+                    <img src="https://img.youtube.com/vi/jZIrnvmdjGY/mqdefault.jpg" alt="83年級畢業歌曲 MV (二)">
                     <div class="playlist-info">
-                        <h4>50周年歌曲 MV (二)</h4>
+                        <h4>83年級畢業歌曲 MV (二)</h4>
                         <p>YouTube 歌曲 MV分享</p>
                     </div>
                 </div>
                 <div class="playlist-item" onclick="playVideo('_Scxn-_XgBY', this)">
-                    <img src="https://img.youtube.com/vi/_Scxn-_XgBY/mqdefault.jpg" alt="50周年感動回顧影片">
+                    <img src="https://img.youtube.com/vi/_Scxn-_XgBY/mqdefault.jpg" alt="83年級畢業感動回顧影片">
                     <div class="playlist-info">
-                        <h4>50周年感動回顧影片</h4>
+                        <h4>83年級畢業感動回顧影片</h4>
                         <p>中原國貿五十周年紀念</p>
                     </div>
                 </div>
