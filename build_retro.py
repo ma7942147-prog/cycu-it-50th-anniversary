@@ -27,7 +27,7 @@ GALLERY = [
 ]
 
 VIDEOS = [
-    ("0a3MefWM4Jw", "中原國貿系50周年", "YouTube 歌曲 MV分享"),
+    ("mBUXb-BK9RA", "中原國貿系50周年", "YouTube 歌曲 MV分享"),
     ("cabBO0QSl_I", "83年級畢業歌曲 MV (一)", "YouTube 歌曲 MV分享"),
     ("jZIrnvmdjGY", "83年級畢業歌曲 MV (二)", "YouTube 歌曲 MV分享"),
     ("_Scxn-_XgBY", "83年級畢業感動回顧影片", "中原國貿五十周年紀念"),
@@ -202,7 +202,7 @@ __GALLERY__
         <div class="video-gallery">
             <div class="main-video">
                 <div class="video-container">
-                    <iframe id="galleryPlayer" src="https://www.youtube-nocookie.com/embed/0a3MefWM4Jw" title="YouTube video player" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe id="galleryPlayer" src="https://www.youtube-nocookie.com/embed/mBUXb-BK9RA" title="YouTube video player" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="video-playlist">
