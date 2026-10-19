@@ -4,7 +4,7 @@ import os
 def build_alumni_page():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     img_path = os.path.join(base_dir, "校友日邀請卡.jpg")
-    output_html_path = os.path.join(base_dir, "index.html")
+    output_html_path = os.path.join(base_dir, "invite.html")  # 活動前邀請版（存檔）；回顧版首頁由 build_retro.py 產生
     
     # Encode image to base64
     base64_img = ""
