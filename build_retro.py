@@ -19,7 +19,7 @@ GALLERY = [
     ("02-checkin-backdrop.jpg", "10:05 商學院校友日背板前合影"),
     ("03-chair-time.jpg", "系主任時間"),
     ("04-memories.jpg", "教師與系友憶當年"),
-    ("05-book.jpg", "老師的著作《50+個生命故事》（秦宗泰 著）"),
+    ("05-book.jpg", "老師的著作《50+個生命故事》（秦宗春 著）"),
     ("07-lucky-draw.jpg", "11:16 歡樂摸彩，得獎系友上台領獎"),
     ("10-campus-heart.jpg", "13:47 飯後回到校園"),
     ("12-enci-hall.jpg", "13:59 恩慈樓前"),
