@@ -81,6 +81,12 @@ EXTRA_CSS = """
         @media (min-width: 769px) {
             .timeline-item.right::after { left: -8px; right: auto; }
         }
+        .quotes-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+            max-width: 1100px; margin: 0 auto; align-items: stretch;
+        }
+        .quotes-grid .quote-box { margin: 0; height: 100%; }
+        @media (max-width: 900px) { .quotes-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
         .archive-link { color: var(--accent-gold); text-decoration: none; border-bottom: 1px dashed var(--accent-gold); }
         @media (max-width: 600px) {
             .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
@@ -148,29 +154,33 @@ BODY = """<body>
     </header>
 
     <section id="intro">
-        <div class="intro-grid">
-            <div>
-                <div class="quote-box" style="margin-bottom: 2rem;">
-                    <p class="quote-text">
-                        「真的，有些回憶<span class="quote-text-highlight">只有跟當時那群人在一起</span>才找得回來。<br><br>
-                        但，真的難以釋懷相聚後的再分離。矛盾的人生……<br><br>
-                        Anyway，這段有你們的回憶，是千金萬銀也換不到的一段快樂歲月。有你們真好，永遠永遠祝福我所遇過的每一個你。」
-                    </p>
-                    <div class="author-info">— 系友心聲</div>
-                </div>
-                <div class="quote-box" style="border-left-color: #e53e3e;">
-                    <p class="quote-text">
-                        「長大之後，最怕的不是變老，而是突然聽懂了54歲寫的那首歌。<br><br>
-                        那天聚會回到中原街角，看到熟悉的學長姐跟學弟妹，那一瞬間真的覺得歲月好像從來沒走遠。雖然我們現在的「血量只剩下 28%」，體力不如當年，聊的也是當年被哪科當掉的蠢事，但看著照片裡大家的笑容，才發現原來有些東西從來沒有變過。<br><br>
-                        即使生活再累、世界再變，只要那群人還在，我們就永遠是當年那個敢衝、敢夢的自己。下次相聚之前，繼續加油吧，把剩下的電力用到最極致！」
-                    </p>
-                </div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">系友心聲</h2>
+        </div>
+        <div class="quotes-grid">
+            <div class="quote-box">
+                <p class="quote-text">
+                    「真的，有些回憶<span class="quote-text-highlight">只有跟當時那群人在一起</span>才找得回來。<br><br>
+                    但，真的難以釋懷相聚後的再分離。矛盾的人生……<br><br>
+                    Anyway，這段有你們的回憶，是千金萬銀也換不到的一段快樂歲月。有你們真好，永遠永遠祝福我所遇過的每一個你。」
+                </p>
             </div>
-            <div class="invite-card-wrap">
-                <p style="color: var(--accent-gold); font-size: 0.9rem; margin-bottom: 0.8rem; letter-spacing: 0.1em;">▼ 活動邀請卡（紀念）</p>
-                <img src="photos/invite-card.jpg" alt="中原國貿50周年校友日邀請卡" class="invite-card-img" onclick="openPhoto(this.src, '活動邀請卡')">
-                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.8rem;">想看活動前的邀請網頁？<a class="archive-link" href="invite.html">點這裡</a></p>
+            <div class="quote-box" style="border-left-color: #e53e3e;">
+                <p class="quote-text">
+                    「長大之後，最怕的不是變老，而是突然聽懂了54歲寫的那首歌。<br><br>
+                    那天聚會回到中原街角，看到熟悉的學長姐跟學弟妹，那一瞬間真的覺得歲月好像從來沒走遠。雖然我們現在的「血量只剩下 28%」，體力不如當年，聊的也是當年被哪科當掉的蠢事，但看著照片裡大家的笑容，才發現原來有些東西從來沒有變過。<br><br>
+                    即使生活再累、世界再變，只要那群人還在，我們就永遠是當年那個敢衝、敢夢的自己。下次相聚之前，繼續加油吧，把剩下的電力用到最極致！」
+                </p>
             </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="section-title-wrap">
+            <h2 class="section-title">活動回顧</h2>
+        </div>
+        <div class="timeline">
+__TIMELINE__
         </div>
     </section>
 
@@ -181,15 +191,6 @@ BODY = """<body>
         </div>
         <div class="gallery-grid">
 __GALLERY__
-        </div>
-    </section>
-
-    <section id="schedule">
-        <div class="section-title-wrap">
-            <h2 class="section-title">活動回顧</h2>
-        </div>
-        <div class="timeline">
-__TIMELINE__
         </div>
     </section>
 
